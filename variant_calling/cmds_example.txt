@@ -1,0 +1,12 @@
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H02299
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H02303
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H02305
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H02310
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H02315
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H03211
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H03227
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H04209
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H04211
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H04223
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H05206
+/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H05219
