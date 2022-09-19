@@ -1,0 +1,32 @@
+library(lostruct)
+library(tools)
+
+#snps <- read_vcf("/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/finalpopulations.recode.vcf")
+snps <- vcf_windower("/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/Final.bcf.gz",size=500, type='snp')
+
+eig_win <- eigen_windows(snps, k=2,mc.core=96)
+win_dist <- pc_dist(eig_win, npc=2)
+
+write.table(eig_win,file=paste("/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/R_results/", "5000_eigwin.txt", sep = ""),sep="\t")
+
+eig_win <- as.matrix(eig_win)
+eig_mean <- colMeans(eig_win[ , 2:3])
+
+write.table(eig_mean,file=paste("/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/R_results/", "5000_eigmean.txt", sep = ""),sep="\t")
+#write.table(win_dist,file=paste("/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/R_results/", "5000_windist.txt", sep = ""),sep="\t")
+
+na.inds <- is.na(pcdist[,1])
+mds_dat <- cmdscale(win_dist[!na.inds,!na.inds], eig=TRUE, k=2)
+
+#mds_dat <- cmdscale(win_dist, eig=TRUE, k=2)
+MDS1 <- mds_dat$points[,1]
+MDS2 <- mds_dat$points[,2]
+mds_coords <- cbind(MDS1,MDS2)
+mds_coords <- as.matrix(mds_coords)
+
+write.table(mds_coords,file=paste("/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/R_results/", "5000_mdscoords.txt", sep = ""),sep="\t")
+
+ext_val <- corners(mds_coords, prop=0.05, k=3)
+ext_val <- as.matrix(ext_val)
+
+write.table(ext_val,file=paste("/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/R_results/", "5000_extval.txt", sep = ""),sep="\t")
