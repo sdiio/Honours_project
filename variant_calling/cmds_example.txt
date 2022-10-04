@@ -1,3 +1,4 @@
+#need to specify the path to the code, and then space and then followed by the individual sample name
 /g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H02299
 /g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H02303
 /g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/1_call_variant_per_sample.sh H02305
