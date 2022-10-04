@@ -1,7 +1,7 @@
 library(lostruct)
 
 win <- 100
-all.dat <- read_vcf("#####################")
+all.dat <- read_vcf("PATH_HERE")
 
 # Returns the PC1 values from the data
 noise.eigenvector <- function(x, d) {
@@ -64,7 +64,7 @@ while (win <= 1000) {
   noise <- sapply(k, get.noise.PC1s, da=all.dat, ws=win)
   noise <- as.matrix(noise)
   rownames(noise) <- k
-  table_name <- paste("##############################################################", win, "_noise.txt", sep = "")
+  table_name <- paste("PATH_HERE", win, "_noise.txt", sep = "")
   write.table(noise, table_name, sep="\t")
 
   win <- win + 100
