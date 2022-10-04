@@ -1,4 +1,5 @@
 #Data analysis 
+#wihtout looping 
 
 library(lostruct)
 library(tools)
