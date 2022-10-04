@@ -11,5 +11,5 @@
 IN="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/"
 OUT="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/"
 
-#Maximum mean depth
+#Maximum mean depth, in this instance set to 20
 /home/564/si7912/vcftools --gzvcf ${IN}/finalpopMQMDMissLQ.recode.vcf --max-meanDP 20 --recode --recode-INFO-all --out ${OUT}/finalpopMQMDMissLQMMD
