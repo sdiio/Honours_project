@@ -10,6 +10,7 @@
 
 module load nci-parallel/1.0.0a
 
+#DO NOT EDIT THIS OPTIONS, THESE WORK PERFECTLY
 export ncores_per_task=12
 export ncores_per_numanode=12
 CMDS_PATH="/g/data/ht96/DiIorio_UQ/command_scripts/2_variant_calling/cmds.txt"
