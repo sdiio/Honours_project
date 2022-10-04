@@ -13,6 +13,9 @@ module load bcftools
 #IN="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA"
 IN="/g/data/ht96/DiIorio_UQ/scratch/variant_calling/step_2_results/finalpop.vcf.gz"
 
+#converts the bcf into a vcf
 bcftools convert ${IN}/subset_SPDCN1KCT_6.bcf.gz > ${IN}/subset_SPDCN1KCT_6.vcf
+#references the vcf file and makes it so you can index it
 bcftools view -I ${IN}/subset_SPDCN1KCT_6.bcf.gz -O z -o ${IN}/Subset_SPDCN1KCT_6.vcf
+#indexes the vcf file
 bcftools index ${IN}
