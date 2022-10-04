@@ -11,5 +11,5 @@
 IN="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/"
 OUT="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/"
 
-#Minimum mean depth
+#Minimum mean depth, in this instance set to 2
 /home/564/si7912/vcftools --vcf ${IN}/finalpopMQMDMissLQMMD.recode.vcf --min-meanDP 2 --recode --recode-INFO-all --out ${OUT}/finalpopMQMDMissLQMMDMinMD
