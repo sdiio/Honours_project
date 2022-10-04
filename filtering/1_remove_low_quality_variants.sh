@@ -12,4 +12,4 @@ IN="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/"
 OUT="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/"
 
 #Removing low quality variants
-#/home/564/si7912/vcftools --gzvcf ${IN} --minQ 20 --recode --recode-INFO-all --out ${OUT}/finalpopMQ.vcf.gz
+/home/564/si7912/vcftools --gzvcf ${IN} --minQ 20 --recode --recode-INFO-all --out ${OUT}/finalpopMQ.vcf.gz
