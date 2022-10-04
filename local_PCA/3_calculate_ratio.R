@@ -9,11 +9,11 @@ noise_files <- list.files(path = "", pattern="noise")
 
 # Match the file from noise files to the corrosponding file from signal_files
  foreach(i=1:length(signal_files)) %do% {
-     signal <- read.table(paste("###################", sep = ""))
+     signal <- read.table(paste("PATH_HERE", sep = ""))
 
      for (j in 1:length(noise_files)){
          if (str_split(signal_files[i], "_", n = 2, simplify=TRUE)[1] == str_split(noise_files, "_", n = 2, simplify=TRUE)) {
-             noise <- read.table(paste("#######", sep = ""))
+             noise <- read.table(paste("PATH_HERE", sep = ""))
          }
      }
 
