@@ -1,3 +1,4 @@
+#each row should have the name of the individual which is to be excluded, and it should be a single individual per row 
 D01273
 D09212
 D02225
