@@ -11,5 +11,5 @@
 IN="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/"
 OUT="/g/data/ht96/DiIorio_UQ/scratch/4_local_PCA/"
 
-#Minimum depth per individual
+#Minimum depth per individual, in this instance set to 1 
 /home/564/si7912/vcftools --gzvcf ${IN}/finalpopMQ.vcf.gz.recode.vcf --minDP 1 --recode --recode-INFO-all --out ${OUT}/finalpopMQMD
